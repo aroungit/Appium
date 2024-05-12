@@ -14,7 +14,7 @@ public class AdditionofNums {
 
 	@Test
 	public void calciAddMul() throws MalformedURLException, URISyntaxException {
-
+//setting the desired capabilities
 		DesiredCapabilities dc = new DesiredCapabilities();
 		dc.setCapability("platformName", "android");
 		dc.setCapability("automationName", "uiAutomator2");
