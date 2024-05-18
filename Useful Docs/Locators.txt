@@ -1,9 +1,0 @@
-ID --> resource-id
-Accessibility ID --> content-desc
-Name --> name
-className --> class
-xpath --> We would write on our own (Note: Replace tagName as className in all the syntax of xpath)
-
-Selenium --> //tagName[@attName='attValue']
-Appium - Native view--> //className[@attName='attValue']
-
