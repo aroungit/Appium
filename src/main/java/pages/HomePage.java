@@ -1,14 +1,14 @@
 package pages;
 
-import io.appium.java_client.AppiumDriver;
+import io.cucumber.java.en.Then;
 import wrappers.GenericWrappers;
 
 public class HomePage extends GenericWrappers {
-    public HomePage(AppiumDriver driver) {
-        this.driver = driver;
+    public HomePage() {
         eleIsDisplayed(getWebElement(Locators.XPATH.asString(), "//android.view.View[@text='PARTICIPANT NAME']"));
     }
 
+    @Then("Verify home page is displayed")
     public HomePage verifyParticipantNameIsDisplayed() {
         boolean eleDisplayed = eleIsDisplayed(getWebElement(Locators.XPATH.asString(), "//android.view.View[@text='PARTICIPANT NAME']"));
         if (eleDisplayed) {

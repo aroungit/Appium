@@ -1,41 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="tests" thread-count="2" verbose="5">
+<suite name="All Test Suite" verbose="5" parallel="tests" thread-count="2">
     <parameter name="platformName" value="Android"></parameter>
     <parameter name="automationName" value="UiAutomator2"></parameter>
     <parameter name="app" value="/apks/leaforg.apk"></parameter>
-    <test verbose="2" preserve-order="true" name="test1">
+
+    <test verbose="2" preserve-order="true" name="test">
         <parameter name="udid" value="emulator-5554"></parameter>
         <parameter name="systemPort" value="9001"></parameter>
         <parameter name="mjpegServerPort" value="9000"></parameter>
         <classes>
-            <class name="testcases.TC002">
-                <methods>
-                    <include name="runCode"/>
-                </methods>
-            </class>
-            <class name="testcases.TC003">
-                <methods>
-                    <include name="runCode"/>
-                </methods>
-            </class>
+            <class name="testRunner.TestRunner"></class>
         </classes>
     </test>
-    <test verbose="2" preserve-order="true" name="test2">
+    <test verbose="2" preserve-order="true" name="test1">
         <parameter name="udid" value="emulator-5556"></parameter>
-        <parameter name="systemPort" value="9008"></parameter>
-        <parameter name="mjpegServerPort" value="9009"></parameter>
+        <parameter name="systemPort" value="9011"></parameter>
+        <parameter name="mjpegServerPort" value="9012"></parameter>
         <classes>
-            <class name="testcases.TC002">
-                <methods>
-                    <include name="runCode"/>
-                </methods>
-            </class>
-            <class name="testcases.TC003">
-                <methods>
-                    <include name="runCode"/>
-                </methods>
-            </class>
+            <class name="testRunner.TestRunner"></class>
         </classes>
     </test>
 </suite>
