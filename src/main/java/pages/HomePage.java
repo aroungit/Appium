@@ -9,6 +9,7 @@ public class HomePage extends GenericWrappers {
         eleIsDisplayed(getWebElement(Locators.XPATH.asString(), "//android.view.View[@text='PARTICIPANT NAME']"));
     }
 
+    
     public HomePage verifyParticipantNameIsDisplayed() {
         boolean eleDisplayed = eleIsDisplayed(getWebElement(Locators.XPATH.asString(), "//android.view.View[@text='PARTICIPANT NAME']"));
         if (eleDisplayed) {
