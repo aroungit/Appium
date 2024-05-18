@@ -5,7 +5,7 @@ import wrappers.GenericWrappers;
 
 public class HomePage extends GenericWrappers {
     public HomePage(AppiumDriver driver) {
-       this.driver = driver;
+        this.driver = driver;
         eleIsDisplayed(getWebElement(Locators.XPATH.asString(), "//android.view.View[@text='PARTICIPANT NAME']"));
     }
 
