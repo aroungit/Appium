@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="appiumTouchActions.appTouchActions">
+      <class name="appiumSMS.ReadDelSMS">
         <methods>
-          <include name="AmazonAppLaunch"/>
+          <include name="ReadSMS"/>
         </methods>
-      </class> <!-- appiumTouchActions.appTouchActions -->
+      </class> <!-- appiumSMS.ReadDelSMS -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
